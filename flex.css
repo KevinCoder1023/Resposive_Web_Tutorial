@@ -1,0 +1,51 @@
+body{
+    background:white
+}
+/* Positioning and laying out the items inside the container*/
+.flexbox-container{
+    display: flex;
+    /* Flex-flow: shortcut for Flex-direction and flex-wrap*/
+    flex-flow:row wrap;
+
+    /* Flex-direction: the container directions*/
+    flex-direction: row;
+
+    /* flex-wrap: wrap items inside the flex container*/
+    flex-wrap: wrap;
+
+    /* justify-content:align items inside the container on the main axis*/
+    justify-content:center;
+        /*:space-around =  flex items with space before, between, and after the lines:*/
+        /*:flex-end = flex items at the end of the container*/
+        /*:flex-start = flex items at the beginning of the container*/
+        /*space-between = flex items with space between the lines*/
+
+    /*  align-items: align the items on the cross axis*/
+    align-items: center;
+        /*:stretch = flex items will be strech to fill the container*/
+        /*:baseline  = flex items will be aligns as their baseline */
+    
+    /*  align-items: align the flex lines*/
+    align-content: space-between;
+}
+/* Positioning and laying out the items individually*/
+.flexbox-item{
+    width: 200px;
+    margin: 10px;
+    border:3px black solid;
+    background-color:gray;
+}
+.flexbox-item-1{
+    min-height: 100px;
+    flex-shrink: 12;
+}
+.flexbox-item-2{
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self:center;
+}
+.flexbox-item-3{
+    min-height: 300px;
+    flex-grow: 1;
+}

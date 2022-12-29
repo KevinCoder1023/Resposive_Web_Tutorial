@@ -1,0 +1,44 @@
+body{
+    background:rgb(105, 126, 232);
+    font-family: sans-serif;
+}
+
+.menu-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;  
+}
+.tourist-menu-widget{
+   width: 100%;
+}
+
+.menu-item{
+    min-width:300px;
+    margin:10px;
+    border:10px solid rgba(0, 0, 0, 0.281);
+    flex-basis: 30%;
+    box-shadow: rgb(103, 101, 101) 0px 10px;
+}
+
+.item-name,.item-price{
+    text-align:start;
+    padding:10px;
+    font-size:25px;
+    font-weight: bold;
+
+}
+.order-btn{
+    width: 100%;
+    padding:10%;
+    background-color: navy;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.order-btn:hover,
+.order-btn:focus {
+  background-color: rgb(81, 81, 219);
+}
