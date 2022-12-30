@@ -1,0 +1,36 @@
+body{
+    background-color: aliceblue;
+}
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    /*grid-template: shorthand property for defining grid column, row, areas */
+    /*-columns: define for columns*/
+    /*-rows: define for rows*/
+    /*-areas: define for the grid and give them names that has been used */
+    /*repeat(): 
+    - repeat the fragment of the track list of the columns/rows in a Grid container
+    - takes in 2 arguments:
+      - repeat count: the number of times should be repeated
+      - tracks: set of tracks that will be repeated.
+     */
+   
+}
+
+.grid-item{
+    border:1px solid black;
+    background-color: yellow;
+    height: 200px;
+}
+
+.grid-item-4{
+    background-color: rgb(209, 106, 209);
+    grid-column: 1/span 2;
+}
+
+.grid-item-5{
+    background-color: rgb(209, 106, 209);
+    grid-column: 1/span -1;
+}
