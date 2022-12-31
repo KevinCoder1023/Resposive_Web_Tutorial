@@ -1,44 +1,96 @@
 body{
-    background:rgb(105, 126, 232);
-    font-family: sans-serif;
-}
-
-.menu-container{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: center;
-    align-items: center;  
-}
-.tourist-menu-widget{
-   width: 100%;
-}
-
-.menu-item{
-    min-width:300px;
-    margin:10px;
-    border:10px solid rgba(0, 0, 0, 0.281);
-    flex-basis: 30%;
-    box-shadow: rgb(103, 101, 101) 0px 10px;
-}
-
-.item-name,.item-price{
-    text-align:start;
-    padding:10px;
-    font-size:25px;
     font-weight: bold;
+    font-size: large;
+   background-color:antiquewhite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.homepage_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+header{
+    background-color: wheat;
+    grid-column: 1/span-1;
+}
+aside{
+    background-color: yellow;
+    grid-column: 1/2;
+}
+content{
+    background-color: skyblue;
+    grid-column: 2/span-1;
+}
+footer{
+    background-color: greenyellow;
+    grid-column: 1/span-1;
+}
+/*Header section*/
+.header_container{
+    display: flex;
+    justify-content: flex-end;
+    margin:0px;
+    padding:0px;
+}
+.header_container > li:nth-child(1) {
+    list-style-type: none;
+    flex-grow: 1;
+    text-align: start;
+}
+.header_container > li:nth-child(n+2) {
+    margin: 24px;
+    list-style-type: none;
+}
+/*Links*/
+a {
+    color: black;
+    text-decoration: solid;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+a:hover {
+    box-shadow: inset 100px 0 0 0 #81D8D0;
+    color: black;
+}
+/*Filter section*/
+.filter_header {
+    font-size: larger;
+    text-align: start;
+    margin:0px;
+    padding:0px;
+}
+.filter_price_title{
+    margin:10px 0px;
+    text-align: start;
 
 }
-.order-btn{
-    width: 100%;
-    padding:10%;
-    background-color: navy;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-size: 30px;
+.filter_lower,
+.filter_higher{
+    margin:10px;
 }
-.order-btn:hover,
-.order-btn:focus {
-  background-color: rgb(81, 81, 219);
+
+.filter_type_title{
+    margin:10px 0px;
+    text-align: start;
+}
+.filter_bev,
+.filter_foods{
+    margin:10px;
+}
+
+/*Menu section*/
+.menu_container{
+    border:5px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.menu_item_card{
+    margin:10px;
+    border:3px solid black;
+}
+.item_to_cart{
+    width:100%;
+    margin:20px 0px 0px 0px;
+    padding:24px;
+    background-color: red;
 }
